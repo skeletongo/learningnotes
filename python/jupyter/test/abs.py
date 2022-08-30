@@ -15,15 +15,18 @@ def abs(a):
         ...
     TypeError: must be int or float!
     '''
-    
-    if not isinstance(a,(int,float)):
+
+    if not isinstance(a, (int, float)):
         raise TypeError("must be int or float!")
     if a >= 0:
-        return a 
+        return a
     return -a
 
-    if __name__=='__main__':
-        import doctest
-        doctest.testmod()
 
-# python3  -m doctest .\abs.py   
+if __name__ == '__main__':
+    import doctest
+
+    doctest.testmod()
+
+# 文档测试
+# python3  -m doctest .\abs.py
